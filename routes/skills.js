@@ -7,6 +7,8 @@ const skillsCtrl = require('../controllers/skills');
 // GET request to /skills
 router.get('/', skillsCtrl.index);
 
+// Get request for creating
+router.get('/new', skillsCtrl.new);
 // GET request to /skills/:id
 
 router.get('/:id', skillsCtrl.show);
