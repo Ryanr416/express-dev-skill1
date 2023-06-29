@@ -13,14 +13,14 @@ module.exports = {
 //create always redirects to either the show page or index page
 function create(req, res) {
 
-    Skill.create(req.body)
+  
 console.log(req.body, " < _ contents of our form");
 
 // we need to get the information from the form
 // then we need to tell the model, take the info from the form
 // and add it to the database
 
-
+Skill.create(req.body)
 
     res.redirect('/Skills') // tells the client to make a git request to /skills
 }
